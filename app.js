@@ -18,7 +18,7 @@ app.use(
 
 app.use(bodyParser.json());
 
-routing(router); 
+routing(router);
 app.use(cors({ origin: '*' }));
 app.use('/api/v1', router);
 app.use(errorMiddleware);

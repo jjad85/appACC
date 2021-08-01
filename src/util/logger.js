@@ -1,7 +1,7 @@
 /*
-* Objeto utilizado para realizar el log de la aplicacion
-* con el fin de centralizar el debug
-*/
+ * Objeto utilizado para realizar el log de la aplicacion
+ * con el fin de centralizar el debug
+ */
 
 const colors = require('colors');
 const moment = require('moment');
@@ -19,45 +19,30 @@ const format = 'DD/MM/YYYY hh:mm:ss:SSS';
 
 exports.writeError = (message) => {
     console.log(
-        'ERROR:   '.error +
-        moment().format(format) +
-        '    ' +
-        message.error
+        'ERROR:   '.error + moment().format(format) + '    ' + message.error
     );
-}
+};
 
 exports.writeWarning = (message) => {
     console.log(
-        'WARNING: '.warn +
-        moment().format(format) +
-        '    ' +
-        message.warn
-    )
-}
+        'WARNING: '.warn + moment().format(format) + '    ' + message.warn
+    );
+};
 
 exports.writeHelp = (message) => {
     console.log(
-        'HELP:    '.help +
-        moment().format(format) +
-        '    ' +
-        message.help
-    )
-}
+        'HELP:    '.help + moment().format(format) + '    ' + message.help
+    );
+};
 
 exports.writeInfo = (message) => {
     console.log(
-        'INFO:    '.info +
-        moment().format(format) +
-        '    ' +
-        message.info
+        'INFO:    '.info + moment().format(format) + '    ' + message.info
     );
-}
+};
 
 exports.writeSuccess = (message) => {
     console.log(
-        'SUCCESS: '.success +
-        moment().format(format) +
-        '    ' +
-        message.success
+        'SUCCESS: '.success + moment().format(format) + '    ' + message.success
     );
-}
+};
